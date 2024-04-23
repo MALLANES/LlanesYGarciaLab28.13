@@ -1,6 +1,29 @@
-#include <iostream>
-using namespace std;
-
 #include "ItemToPurchase.h"
 
-/* Code to be completed in the AM 4/22/2024
+ItemToPurchase::ItemToPurchase() : itemName("none"), itemPrice(0), itemQuantity(0) {
+
+}
+
+void ItemToPurchase::SetName(const string &name) {
+    itemName = name;
+}
+
+string ItemToPurchase::GetName() const {
+    return itemName;
+}
+
+void ItemToPurchase::SetPrice(int price) {
+    itemPrice = price;
+}
+
+int ItemToPurchase::GetPrice() const {
+    return itemPrice;
+}
+
+void ItemToPurchase::SetQuantity(int quantity) {
+    itemQuantity = quantity;
+}
+
+int ItemToPurchase::GetQuantity() const {
+    return itemQuantity;
+}
